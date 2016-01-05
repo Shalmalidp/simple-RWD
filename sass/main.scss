@@ -27,6 +27,21 @@ a{
   width:94%;
 }
 
+a{
+  color : orange;
+}
+
+a:hover{
+  color :#fff;
+  background-color: orange;
+  border-radius:5px;
+  padding: 1%;
+}
+
+header{
+  color :orange;
+}
+
 .logo-nav nav ul{
   list-style: none;
   padding :1%;
