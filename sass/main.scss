@@ -2,8 +2,9 @@
 // See Readme for a list of supported ones
 
 body {
-  background: #000;
+  background: #000305;
   //color: #000305;
+  backgound-image:url("http://www.download-free-wallpaper.com/img76/ixuvfdvtgbibhyfduusp.jpg");
 }
 
 .body{
@@ -18,24 +19,27 @@ a{
   color : orange;
 }
 
+h2 a:hover{
+  background-color:orange;
+  color:#fff; 
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding:2%;
+
+}
+
 nav a{
   color:#fff;
  
 }
 
-// a:hover{
-//   color :#fff;
-//   background-color: orange;
-//   border-radius:5px;
-//   padding: 1%;
-//   //margin-top:1%;
-// }
 
 nav a:link, nav a:visited{
   color : #fff;
   //display:inline-block; makes it jump so commented
-  padding : 7px 25px 15px;
-  height: 40px;
+  padding : 7px 30px 15px;
+  //height: 40px;
 }
 
 
@@ -58,13 +62,10 @@ nav a:link, nav a:visited{
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  margin:0 3%;
+  margin:0 2%;
   height:40px;
-  width:94%;
+  //width:100%;
 }
-
-
-
 
 header{
   color :orange;
@@ -85,9 +86,9 @@ header{
 .mainContainer{
   //border:1px solid orange;
   overflow : auto;
-  width :60%;
+  width :67%;
   float:left;
-  margin:2% 3%;
+  margin:2%;
 }
 .content{
 }
@@ -114,20 +115,21 @@ header{
   margin: 2% auto;
   color:#888;
   font-size: 70%;
+  font-style: italic;
 }
 
 .asides{
-  width:30%;
-  margin-top:2.5%;
+  width:27%;
+  margin-top:3%;
   //border:1px solid black;
-  float : right;
-  margin-right:3.3%;
+  float : left;
+  //margin-right:3.3%;
   
 }
 
 .top-aside{
   font-size: 87.5%;
-  margin: 2% 0;
+  margin: 2.5% 0;
   background-color:#fff;
   border-radius:5px;
   -moz-border-radius: 5px;
@@ -137,7 +139,7 @@ header{
 .mid-aside{
   font-size: 87.5%;
   background-color:#fff;
-  margin: 2% 0;
+  margin: 2.5% 0;
   border-radius:5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -146,7 +148,7 @@ header{
 .bottom-aside{
   font-size: 87.5%;
   background-color:#fff;
-  margin: 2% 0;
+  margin: 2.5% 0;
   border-radius:5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -155,7 +157,7 @@ header{
 
 
 .footer{
-  width: 94%;
+  width:97%;
   display:inline-block;
   text-align: center;
   background-color: #666;
@@ -163,6 +165,65 @@ header{
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   height:40px;
-  margin: 3%;
+  margin: 0 2%;
   font-size:87.5%;
+}
+
+
+// RESPONSIVE CODE
+
+@media only screen and(min-width :150px) and (max-width : 600px){
+  .body{
+    width: 95%;
+    font-size: 95%;
+  }
+
+  .logo-nav img{
+    width:100%;
+    margin: 0 auto;
+  }
+
+  nav a:link, nav a:visited{
+  color : #fff;
+  display :block;
+  margin-top: -7px ;
+  padding : 10px 45px 12px;
+  //height: 40px;
+}
+
+
+.active a:link, nav a:hover, nav a:active, nav a:visited{
+  background-color : orange;
+  text-shadow:none;
+  border-radius:5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+
+.logo-nav nav {
+  width:100%;
+  
+}
+
+header{
+  color :orange;
+}
+
+.logo-nav nav ul{
+  list-style: none;
+  padding :0%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.logo-nav nav ul li{
+  display: block;
+
+}
+
+
+
+
 }
